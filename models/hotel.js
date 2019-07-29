@@ -4,11 +4,8 @@ var Schema   = mongoose.Schema;
 
 var hotelSchema = new Schema({
     name         : String,
-    address      : String,
-    zip          : String,
-    city         : String,
-    state        : String,
-    rate         : Number,
+    price        : Number,
+    category     : String,
     roomCount    : Number
 });
 

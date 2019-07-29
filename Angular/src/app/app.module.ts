@@ -8,6 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { AdminComponent } from './admin/admin.component';
 import { HotelsComponent } from './hotels/hotels.component';
 import { BookingComponent } from './booking/booking.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { BookingComponent } from './booking/booking.component';
     LoginComponent,
     AdminComponent,
     HotelsComponent,
-    BookingComponent
+    BookingComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

@@ -4,6 +4,10 @@ import { RegistrationComponent } from './registration/registration.component';
 import { LoginComponent } from './login/login.component';
 import { AdminComponent } from './admin/admin.component';
 import { HotelsComponent } from './hotels/hotels.component';
+import { BookingComponent } from './booking/booking.component';
+import { NavbarComponent } from './navbar/navbar.component';
+
+
 const routes: Routes = [
 
 
@@ -19,6 +23,12 @@ const routes: Routes = [
   {
     path: '', redirectTo: '/hotels',pathMatch: 'full'
   },
+  {
+    path: '', redirectTo: '/booking',pathMatch: 'full'
+  },
+  {
+    path: '', redirectTo: '/navbar',pathMatch: 'full'
+  },
 {
   path: 'registration', component: RegistrationComponent
 },
@@ -30,6 +40,12 @@ const routes: Routes = [
 },
 {
   path: 'hotels', component : HotelsComponent
+},
+{
+  path: 'booking', component : BookingComponent
+},
+{
+  path: 'navbar', component : NavbarComponent
 }
 
 

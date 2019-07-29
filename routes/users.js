@@ -246,11 +246,7 @@ router.post('/api/bookings', isLoggedInAjax, function(req, res){
                     throw err;
                 }
                 var booking = new Booking();
-                booking.creditCardName = req.body.creditCardName;
                 booking.creditCard = req.body.creditCard;
-                booking.securityCode = req.body.securityCode;
-                booking.month = req.body.month;
-                booking.year = req.body.year;
                 booking.roomType = req.body.roomType;
                 booking.checkInDate = new Date(req.body.checkInDate);
                 booking.checkOutDate = new Date(req.body.checkOutDate);
